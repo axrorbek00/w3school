@@ -1,0 +1,74 @@
+{% load my_tages %}
+
+
+<div class="sticky-top w-100">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="div_logo">
+                <img class="img_logo"
+                     src="https://static.wikia.nocookie.net/logopedia/images/c/c7/W3Schools_2020.svg/revision/latest/scale-to-width-down/180?cb=20210514020423">
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 cat_nav_ul">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#">
+                            Tutorial
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#">
+                            Exercise
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#">
+                            Get Certifild
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#">
+                            Services
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex navbar_button">
+
+                    <button class="btn bootcamp bootcamp" type="submit">Bootcamps</button>
+                    <button class="btn bootcamp" type="submit">Spaces</button>
+
+                    <div class="d-flex but_2">
+                        <button class="btn  search w-50 " type="submit">Search</button>
+                        <button class="btn  login" type="submit">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar navbar-expand-lg cat_navbar_color">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav cat_navbar">
+                    {% get_book as books %}
+                    {% get_book_id as book_id %}
+
+                    {% for book in books %}
+                        <a class="nav-link text-white" href="{% url 'books' book.id %}">{{ book }}</a>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+{#{% if book.id == book_id %}style="background: #04AA6D; color:white;" {% endif %}#}

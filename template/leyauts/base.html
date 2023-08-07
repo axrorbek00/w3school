@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>W3schools</title>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap-icons/font/bootstrap-icons.css' %}">
+    <link rel="icon" type="image/x-icon"
+          href="https://static.wikia.nocookie.net/logopedia/images/c/c7/W3Schools_2020.svg/revision/latest/scale-to-width-down/180?cb=20210514020423">
+</head>
+<body>
+{% include 'leyauts/navbar.html' %}
+
+<div class="d-flex justify-content-between">
+
+    {% block content %}
+
+
+
+    {% endblock %}
+
+</div>
+
+<script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script>
+</body>
+</html>

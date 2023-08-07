@@ -1,0 +1,110 @@
+
+.img_logo {
+    width: 40px;
+}
+
+
+.div_logo {
+    width: 70px;
+}
+
+
+.cat_nav_ul > li:hover {
+    background-color: #04AA6D !important;
+    color: white !important;
+}
+
+
+.cat_nav_ul > li > a:hover {
+    color: white !important;
+}
+
+
+.cat_navbar_color {
+    background-color: #282A35;
+    height: 37px;
+}
+
+
+.cat_navbar > a:hover {
+    background-color: black;
+}
+
+
+.cat_navbar > a {
+    width: auto;
+    font-size: 12px !important;
+}
+
+.bootcamp {
+    margin-right: 20px;
+    border-radius: 50px !important;
+}
+
+.login {
+    background-color: #b7f5b7 !important;
+    border-bottom-right-radius: 50px !important;
+    border-top-right-radius: 50px !important;
+    position: relative;
+    padding-left: 30px !important;
+    left: -20px;
+}
+
+.login:hover {
+    background-color: #04AA6D !important;
+    color: white !important;
+
+
+}
+
+.bootcamp:hover {
+    background-color: #d2cbcb !important;
+    border-radius: 50px !important;
+}
+
+.search {
+    z-index: 1000 !important;
+    border-radius: 50px !important;
+    background-color: #04AA6D !important;
+    color: white !important;
+}
+
+.category {
+    background-color: #E7E9EB;
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+
+
+}
+
+
+.right > div > p {
+    text-align: center;
+}
+
+.category > a {
+    color: black;
+    text-align: left !important;
+    text-decoration: none !important;
+    padding: 0px 15px;
+    font-size: 18px;
+    padding-left: 1.5rem;
+
+}
+
+.category > a:hover {
+    background-color: #d5d9d8 !important;
+    color: black !important;
+}
+
+
+.right {
+    border-left: 1px solid grey;
+}
+
+/*@media only screen and (min-width: 900px) {*/
+/*    .tutorial-nav {*/
+/*        display: none !important;*/
+/*    }*/
+/*}*/
